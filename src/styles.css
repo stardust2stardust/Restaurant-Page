@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d8d8d8;
+}
+
+.header-logo {
+    width: 300px;
+}
+
+.header {
+    background-color: #8bb679;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    list-style: none;
+}

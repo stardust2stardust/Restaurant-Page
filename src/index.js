@@ -1,5 +1,15 @@
-import pageLoad from './page-load';
+import loadHeader from './header';
+import './styles.css';
+import loadPageContent from './pageContent';
 
 
-pageLoad();
+
+
+
+loadHeader();
+
+loadPageContent();
+
+
+
 
