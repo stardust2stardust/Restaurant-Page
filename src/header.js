@@ -1,4 +1,4 @@
-import logo from './images/logo.png';
+import logo from './images/hungryherbivore.png';
 
 export default function loadHeader() {
     const content = document.getElementById('content');
@@ -16,12 +16,10 @@ export default function loadHeader() {
     const nameAndLogoText = document.createElement('div');
 
     const restName = document.createElement('h1');
-    restName.innerText = "Made with Love";
+    restName.classList.add('logo-text');
+    restName.innerText = "The Hungry Herbivore";
 
-    const catchPhrase = document.createElement('h2');
-    catchPhrase.innerText = 'we love making food that you love!';
-
-    nameAndLogoText.append(restName, catchPhrase);
+    nameAndLogoText.append(restName);
 
     // create tab section to put in header
     const tabs = document.createElement('ul');

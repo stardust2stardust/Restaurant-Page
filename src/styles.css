@@ -1,25 +1,81 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
     background-color: #d8d8d8;
+
+    background-repeat: no-repeat;
+    font-family: 'Life Savers', cursive;
+    color: #2c4f40;
+    margin: 0;
 }
 
 .header-logo {
-    width: 300px;
+    height: 150px;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 3.0rem;
+    letter-spacing: 0.1rem;
 }
 
 .header {
     background-color: #8bb679;
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
+    justify-content: center;
     align-items: center;
+    box-shadow: 0px 5px 15px #2c4f40;
 }
 
 .nav-items {
     display: flex;
     width: 20%;
     justify-content: space-around;
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #13221c;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    margin-left: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full-menu {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    height: 100vh;
+    background-image: url('./images/monika-grabkowska-i14VzlCp-Eo-unsplash.jpg');
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px #13221c;
+    border-radius: 5px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #d8d8d8;
+    width: 80%;
+    padding: 10px;
+    margin: 20px 0;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.menu-items>li {
+    font-size: 1.5rem;
+    color: #13221c;
     list-style: none;
 }

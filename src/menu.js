@@ -4,10 +4,17 @@ export default function menuPage() {
 
     mainContent.replaceChildren();
 
-    const starters = document.createElement('h2');
-    starters.innerText = 'Starters';
+    const fullMenu = document.createElement('div');
+    fullMenu.classList.add('full-menu');
+
+    const starters = document.createElement('div');
+    starters.classList.add('section')
+
+    const startersHeading = document.createElement('h2');
+    startersHeading.innerText = 'Starters';
 
     const ulStarters = document.createElement('ul');
+    ulStarters.classList.add('menu-items');
 
 
     const starter1 = document.createElement('li');
@@ -17,8 +24,8 @@ export default function menuPage() {
     starter2.innerText = 'second starter';
 
     ulStarters.append(starter1, starter2)
-    starters.appendChild(ulStarters);
-
-    mainContent.appendChild(starters);
+    starters.append(startersHeading, ulStarters);
+    fullMenu.append(starters)
+    mainContent.appendChild(fullMenu);
 
 }
