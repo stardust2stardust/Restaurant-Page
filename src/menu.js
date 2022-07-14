@@ -32,9 +32,26 @@ export default function menuPage() {
     const starter2 = document.createElement('li');
     starter2.innerText = 'second starter';
 
+    const sammies = document.createElement('div');
+    sammies.classList.add('section');
+
+    const sammiesHeading = document.createElement('h2');
+    sammiesHeading.innerText = 'Sammies';
+
+    const ulSammies = document.createElement('ul');
+    ulSammies.classList.add('menu-items');
+
+    const sammy1 = document.createElement('li');
+    sammy1.innerText = 'Sammy 1';
+
+    const sammy2 = document.createElement('li');
+    sammy2.innerText = 'Sammy 2';
+
     ulStarters.append(starter1, starter2)
+    ulSammies.append(sammy1, sammy2)
     starters.append(startersHeading, ulStarters);
-    fullMenu.append(starters)
+    sammies.append(sammiesHeading, ulSammies)
+    fullMenu.append(starters, sammies)
     menuDiv.append(menuSideImage, fullMenu)
     mainContent.appendChild(menuDiv);
 

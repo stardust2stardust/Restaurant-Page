@@ -26,6 +26,7 @@ export default function loadHeader() {
     tabs.classList.add('nav-items')
 
     const home = document.createElement('li');
+    home.classList.add('home-tab');
     home.innerText = 'Home';
 
     const menu = document.createElement('li');

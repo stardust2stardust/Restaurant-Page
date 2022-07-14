@@ -29,6 +29,7 @@ h1 {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 5px 15px #2c4f40;
+
 }
 
 .nav-items {
@@ -49,27 +50,70 @@ h1 {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 40px;
+    gap: 20px;
+    width: 80%;
+
 }
+
+/* .home-main {
+    background: no-repeat center/90% url('./images/joanna-boj-MhOoD_h90ks-unsplash.jpg');
+    padding: 30px 0;
+} */
+
+.home-topDiv,
+.home-bottomDiv {
+    display: flex;
+    width: 100%;
+    border: 2px solid #2c4f40;
+}
+
+.home-image {
+    width: 40%;
+}
+
+.section-home {
+    width: 50%;
+    background-color: #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+
+    opacity: .9;
+
+}
+
+.section-home h2 {
+    font-size: 2.0rem;
+    margin-bottom: 15px;
+    color: #13221c;
+}
+
+.section-home p {
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #13221c;
+}
+
+
 
 .menu-div {
     display: flex;
-    margin-top: 40px;
+
     box-shadow: 0px 0px 10px #13221c;
     width: 80%;
 }
 
-.menu-side-image {
-    opacity: 0.8;
+.menu-side-image,
+.home-image {
+    opacity: 0.85;
 }
 
 .full-menu {
     display: flex;
     flex-direction: column;
-
-
-
-
     border-radius: 5px;
 }
 
@@ -79,12 +123,14 @@ main {
     align-items: center;
     justify-content: flex-start;
     background-color: #d8d8d8;
-    width: 80%;
+
     padding: 10px;
     margin: 20px 0;
     height: fit-content;
     border-radius: 5px;
 }
+
+
 
 .menu-items>li {
     font-size: 1.5rem;
