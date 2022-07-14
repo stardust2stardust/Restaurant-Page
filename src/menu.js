@@ -1,8 +1,17 @@
+import menuImage from './images/monika-grabkowska-leafygreens.jpg'
+
 export default function menuPage() {
     console.log('menu tab clicked')
     const mainContent = document.querySelector('main');
 
     mainContent.replaceChildren();
+
+    const menuDiv = document.createElement('div');
+    menuDiv.classList.add('menu-div');
+
+    const menuSideImage = document.createElement('img');
+    menuSideImage.src = menuImage;
+    menuSideImage.classList.add('menu-side-image');
 
     const fullMenu = document.createElement('div');
     fullMenu.classList.add('full-menu');
@@ -26,6 +35,7 @@ export default function menuPage() {
     ulStarters.append(starter1, starter2)
     starters.append(startersHeading, ulStarters);
     fullMenu.append(starters)
-    mainContent.appendChild(fullMenu);
+    menuDiv.append(menuSideImage, fullMenu)
+    mainContent.appendChild(menuDiv);
 
 }

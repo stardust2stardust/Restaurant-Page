@@ -33,7 +33,8 @@ h1 {
 
 .nav-items {
     display: flex;
-    width: 20%;
+    padding: 30px;
+    align-items: center;
     justify-content: space-around;
     list-style: none;
     cursor: pointer;
@@ -42,6 +43,7 @@ h1 {
     font-weight: 700;
     letter-spacing: 0.08rem;
     margin-left: auto;
+    gap: 15px;
 }
 
 main {
@@ -50,14 +52,24 @@ main {
     align-items: center;
 }
 
+.menu-div {
+    display: flex;
+    margin-top: 40px;
+    box-shadow: 0px 0px 10px #13221c;
+    width: 80%;
+}
+
+.menu-side-image {
+    opacity: 0.8;
+}
+
 .full-menu {
     display: flex;
-    justify-content: center;
-    width: 75%;
-    height: 100vh;
-    background-image: url('./images/monika-grabkowska-i14VzlCp-Eo-unsplash.jpg');
-    margin-top: 20px;
-    box-shadow: 0px 0px 10px #13221c;
+    flex-direction: column;
+
+
+
+
     border-radius: 5px;
 }
 
