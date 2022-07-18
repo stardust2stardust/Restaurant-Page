@@ -83,6 +83,7 @@ main {
 .home-bottomDiv {
     padding: 30px;
     border-top: 1px solid #13221c;
+    border-bottom: 1px solid #13221c;
 }
 
 .section-home {
@@ -208,6 +209,13 @@ main {
     text-align: center;
     font-size: 2.0rem;
 
+}
+
+.photo-credit {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #13221c;
+    justify-self: flex-end;
+    font-size: 0.8rem;
 }
 
 

@@ -59,4 +59,10 @@ export default function homePage() {
     bottomDiv.append(hoursSection, locationSection);
     mainContent.append(topDiv, bottomDiv);
 
+    // photo credit
+    const photoCredit = document.createElement('p');
+    photoCredit.innerText = 'photo credit: Joanna Boj (unsplash.com)';
+    photoCredit.classList.add('photo-credit');
+    mainContent.appendChild(photoCredit);
+
 }

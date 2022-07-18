@@ -79,4 +79,10 @@ export default function menuPage() {
     menuDiv.append(menuSideImage, fullMenu)
     mainContent.appendChild(menuDiv);
 
+    // photo credit
+    const photoCredit = document.createElement('p');
+    photoCredit.innerText = 'photo credit: Monika Grabowska (unsplash.com)';
+    photoCredit.classList.add('photo-credit');
+    mainContent.appendChild(photoCredit);
+
 }
