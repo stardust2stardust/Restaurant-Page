@@ -1,4 +1,5 @@
 import kitchenImage from './images/joanna-boj-MhOoD_h90ks-unsplash.jpg';
+import textForAboutSection from './text/aboutUs.txt'
 
 export default function homePage() {
     console.log('home tab clicked')
@@ -25,7 +26,7 @@ export default function homePage() {
     aboutHeading.innerText = 'About Us';
 
     const aboutText = document.createElement('p');
-    aboutText.innerText = "A nice little paragraph describing what we do."
+    aboutText.innerText = textForAboutSection;
 
     aboutSection.append(aboutHeading, aboutText);
 
